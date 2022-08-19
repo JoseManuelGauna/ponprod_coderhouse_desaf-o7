@@ -1,0 +1,238 @@
+/* los colores los extraje de https://colorhunt.co/palette/4c3a51774360b25068e7ab79 */
+a:link {
+  color: #B25068;
+  text-decoration: none; }
+
+a:visited {
+  color: #B25068;
+  text-decoration: none; }
+
+a:hover {
+  color: #f8d3b4;
+  text-decoration: none; }
+
+html {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  width: 100vmax;
+  font-family: 'Nunito', sans-serif; }
+
+body {
+  padding: 0%;
+  margin: 0%;
+  background-color: #f8d3b4;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  position: relative; }
+  body a {
+    margin-top: 10px;
+    font-style: oblique;
+    font-size: 30px; }
+  body h1 {
+    margin-top: 10px;
+    font-size: 70px; }
+  body p {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 1%; }
+
+.navSmall {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  margin-top: 0%; }
+  .navSmall iframe {
+    width: 100vmax; }
+
+.workGrid {
+  display: grid;
+  align-self: center;
+  padding: 0px;
+  width: 100vmax;
+  justify-items: center;
+  grid-template-columns: 12;
+  grid-template-rows: auto; }
+  .workGrid #poster1 {
+    display: flex;
+    width: 100vmax;
+    height: auto;
+    grid-column: span 12;
+    grid-row: 1;
+    background-color: #0e0b0f;
+    justify-content: center; }
+    .workGrid #poster1 img {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 100vmax; }
+      .workGrid #poster1 img #texto1 {
+        overflow: hidden; }
+  .workGrid .artistPhoto {
+    grid-row: auto;
+    flex-direction: column;
+    vertical-align: middle;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+    .workGrid .artistPhoto img {
+      display: flex;
+      vertical-align: middle;
+      width: 100%;
+      height: auto; }
+
+.LaminasGrid {
+  display: grid; }
+
+.Lamina1,
+.Lamina2,
+.Lamina3 {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .Lamina1 h1,
+  .Lamina2 h1,
+  .Lamina3 h1 {
+    padding-top: 10%;
+    padding-left: 20%;
+    font-size: calc(40px + 0.390625vw);
+    color: antiquewhite; }
+  .Lamina1 p,
+  .Lamina2 p,
+  .Lamina3 p {
+    color: antiquewhite;
+    padding-left: 20%;
+    font-size: calc(15px + 0.390625vw); }
+  .Lamina1 a,
+  .Lamina2 a,
+  .Lamina3 a {
+    padding-left: 20%; }
+
+.Lamina1 {
+  grid-row: 1/2;
+  background-image: url(../assets/img/PORTADA.png);
+  background-attachment: fixed; }
+
+.Lamina2 {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  background-image: url(../assets/img/RicoMic.jpg); }
+  .Lamina2 .Lam2 {
+    grid-column: 2/3; }
+
+.Lamina3 {
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background-image: url(../assets/img/PonGuitar.jpeg);
+  background-attachment: fixed; }
+  .Lamina3 .Lam3 {
+    grid-column: 1/2; }
+
+.Lam2,
+.Lam3 {
+  color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  background-color: #0e0b0fa6; }
+
+iframe {
+  border: none;
+  margin: 0;
+  padding: 0%;
+  align-items: center;
+  grid-row: auto;
+  width: 100vw;
+  height: 130px; }
+
+.gridBase {
+  display: grid;
+  align-items: center;
+  justify-items: center; }
+
+#tablaHitMeUp {
+  font-family: 'Nunito', sans-serif;
+  color: antiquewhite;
+  background-color: black; }
+
+/*----------------BIO----------------------*/
+#tabla_bio {
+  margin-left: 400px;
+  margin-right: 400px;
+  display: inline-block;
+  padding: 5px; }
+
+#bio2 {
+  text-align: justify;
+  margin-left: 200px;
+  margin-right: 200px; }
+
+/*----------CONTACT---------------------------*/
+#ContactForm h1 {
+  justify-content: center;
+  padding-top: 170px; }
+
+#table_form {
+  font-family: 'Nunito', sans-serif;
+  background-color: #B25068;
+  text-align: left;
+  color: azure;
+  margin-left: 400px;
+  margin-right: 400px;
+  display: block; }
+
+/*-----------------FOOTER--------------------*/
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100vmax;
+  height: 20px;
+  height: fit-content;
+  text-align: center;
+  justify-content: center;
+  font-size: 14px;
+  background-color: #0e0b0f;
+  color: #E7AB79; }
+
+#footer iframe {
+  min-height: 100%;
+  height: auto;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  width: 100vw; }
+
+/*-----------------NONE---------------------*/
+@media screen and (min-width: 800px) {
+  .Lamina2,
+  .Lamina3 {
+    grid-template-columns: 1; }
+  .Lam2,
+  .Lam3 {
+    grid-column: 1; }
+  .workGrid .artistPhoto {
+    grid-column: span 1; } }
+
+@media screen and (min-width: 480px) {
+  .Lamina2,
+  .Lamina3 {
+    grid-template-columns: 1; }
+  .Lam2,
+  .Lam3 {
+    grid-column: 1; }
+  .workGrid .artistPhoto {
+    grid-column: span 3; } }
+
+@media screen {
+  .Lamina2,
+  .Lamina3 {
+    grid-template-columns: 1; }
+  .Lam2,
+  .Lam3 {
+    grid-column: span 2; }
+  .workGrid .artistPhoto {
+    grid-column: span 4; } }

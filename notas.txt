@@ -1,0 +1,23 @@
+DESAFIO ENTREGABLE N°7 (APLICANDO SASS II y SEO)
+
+CONSIGNA:
+>> Consigna: Aplicar un mapa, un mixin y un extend para modificar cualquier elemento de nuestro sitio. Realizar las modificaciones necesarias para mejorar el SEO en nuestro sitio.
+
+>>Aspectos a incluir en el entregable:
+Declarar un mapa y utilizar un map-get. Extender una clase base y modificarla. Generar un mixin para reutilizar código.
+Suma keywords, descripción, títulos y encabezado a todas las páginas de tu sitio.
+Explica en un Google Doc los cambios realizados en el punto anterior, por ejemplo: 
+“Agregué estas keywords”, “cambié estos títulos”
+
+
+DESARROLLO:
++ Agregué el archivo .gitignore a la carpeta root, y configuré para que no se suba la carpeta node_modules. 
++ Declaré un mapa para definir en px los breakpoints de las páginas. Declaré un cambio de formato en las láminas de imagenes del INDEX y para el grid de WORK.
++ Si bien pude incorporar todo, se me hizo un poco desorden los breakpoints. Estoy trabajando en éso para que en cada media query se genere un cambio de span en las columnas de las fotos del WORK, así puedo colocar 1 foto cada 2 columnas en modo desktop, 1 cada 3 en modo tablet y 1 cada 4 en modo mobile. Algo parecido estoy queriendo armar en INDEX.
+
+Mi idea para WORK es reemplazar la imagen del div "poster1" por un video de YouTube en un iframe, y colocar debajo una grilla de fotos que, al ser clickeada, cambie el link del iframe. Cada imagen sería un "trabajo terminado" si se quiere. Por ahora es un monstruo inentendible la pagina WORK, pero creo que es porque no tengo la jerarquía bien organizada.
++ No llegué a incorporar la sintaxis "extend" para importar de otros .scss, no me dió el tiempo. De igual manera pienso incorporarlo.
+
++ Con respecto a los "keywords, descripción, títulos y encabezado", ya había modificado titulos y descripción anteriormente, así que ahora agregué keywords. Creo que ya tenía bastante aceitado el titulo y descripcion de mis paginas, no son muchas.
+
+
